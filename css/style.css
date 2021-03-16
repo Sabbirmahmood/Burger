@@ -1,0 +1,426 @@
+/*Google Fonts Monserat & Alfa Slab*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/*=============
+	Font Family
+===============
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;*/
+
+/*============
+	Global CSS
+=============*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #3d2514;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+
+/*============
+	Header CSS
+=============*/
+
+header{
+	background: url(../img/Banner-Background.png) no-repeat center top;
+	background-size: cover;
+	padding: 15px 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #3d2514;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 14px;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #05f945;
+    font-size: 25px;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+.navbar-expand-lg .navbar-nav {
+	margin: 0;
+}
+.navbar-expand-lg {
+	padding: 0;
+}
+.navbar-light .navbar-nav .nav-link::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+    height: 3px;
+    background: rgba(255, 139, 56, 0);
+    bottom: 0;
+    left: -100%;
+    transition: 0.3s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+	left: 0%;
+	background: rgba(255, 139, 56, 1);
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background: #fff;
+}
+header p{
+	font-size: 21px;
+    font-weight: 600;
+    margin-left: -60px;
+}
+
+/*============
+	Banner CSS
+=============*/
+
+.banner-content h5{
+	margin-top: 110px;
+    border: 2px dashed #3d2514;
+    padding: 10px 13px;
+    width: 413px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+}
+.banner-content h1{
+	font-family: 'Alfa Slab One', cursive;
+    font-size: 120px;
+    text-shadow: 3px 3px 1px #fff;
+}
+.banner-content h2{
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 63px;
+    text-shadow: 3px 3px 1px #fff;
+    margin-bottom: 200px;
+}
+.burger-price{
+	background: #bf2222;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.price-border{
+	border: 2px dashed #fff;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+.burger-price h3{
+	font-size: 43px;
+    padding-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+.burger-price p{
+	font-size: 30px;
+    line-height: 15px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+.burger-price h3 span{
+	font-size: 20px;
+}
+.burger-image{
+	position: relative;
+}
+.burger-price{
+	position: absolute;
+	bottom: 5px;
+    left: 60px;
+}
+.mn-auto{
+	text-align: right;
+}
+.mb-O{
+	display: inline;
+	margin-right: 55px;
+	font-size: 20px;
+	font-weight: 500;
+}
+/*===============
+	Burger Poster
+================*/
+
+.burger-poster{
+	padding: 100px 0 0;
+}
+.burger-img{
+	padding-bottom: 35px;
+	position: relative;
+}
+.burger-content{
+	position: absolute;
+    top: 20px;
+    left: 15px;
+}
+.burger-content h5{
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+.burger-content h1{
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 45px;
+	font-weight: 300;
+}
+
+/*============
+	Burger Menu
+=============*/
+
+.burger-menu{
+	padding: 80px 0;
+}
+.burger-menu h5{
+	font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background: #ffc045;
+    color: #3d2514;
+    padding: 7px;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 270px;
+    margin-bottom: 30px;
+}
+.burger-menu h3{
+	font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #3d2514;
+    font-size: 61px;
+}
+.burger-menu p{
+	text-align: center;
+    color: #3d2514;
+    font-size: 19px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+.menu-item{
+	width: 100%;
+}
+.menu-item h1{
+	font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #3d2514;
+}
+.menu-item p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #3d2514;
+}
+.btn-menu{
+	font-family: 'Alfa Slab One', cursive;
+    background: #bf2222;
+    color: #fff;
+    padding: 14px 23px;
+    font-size: 19px;
+    font-weight: 300;
+    margin-top: 100px;
+}
+.img-two{
+	width: 94%;
+}
+
+/*============
+	Event CSS
+=============*/
+
+.event-section{
+	padding: 100px 0 50px;
+}
+.event-box{
+	box-shadow: 5px 8px 50px #eee;
+	padding: 20px 10px;
+}
+.event-section h5{
+	text-transform: uppercase;
+    font-size: 32px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.event-section h3{
+	text-transform: uppercase;
+    font-size: 42px;
+    margin-left: 30px;
+}
+.event-section p{
+	text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: -30px;
+    text-align: left;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045;
+}
+.owl-carousel .owl-item img {
+    display: block;
+}
+.img-silde1{
+	width: 40%;
+}
+.seperate{
+	
+}
+/*=============
+	Booking CSS
+==============*/
+
+.booking-section{
+	background: url(../img/info-background.png) no-repeat center top;
+	background-size: cover;
+	padding: 100px 0 300px;
+	position: relative;
+}
+.booking-section h5{
+	font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.booking-section h3{
+	font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    letter-spacing: 4px;
+    padding-bottom: 70px;
+}
+.form-control {
+	font-family: 'Oswald', sans-serif;
+    padding: 0.700rem .75rem;
+    border-radius: .25rem;
+    margin-left: 225px;
+}
+.form-control:focus{
+	box-shadow: none;
+	border: 1px solid #3d2514;
+}
+.btn-submit{
+	background: #bf2222;
+	color: #fff;
+	font-family: 'Alfa Slab One', cursive;
+	width: 100%;
+	padding: 10px;
+	font-size: 17px;
+	margin-left: 225px;
+}
+/*============
+	Footer CSS
+=============*/
+footer{
+	background: url(../img/footer-background.png) no-repeat center top;
+	background-size: cover;
+	padding: 100px 0 0;
+}
+.lorem p{
+	color: #fff;
+	margin-top: 50px;
+}
+.address-location{
+
+}
+.address-location .fa{
+	padding-right: 20px;
+	font-size: 45px;
+	color: #fff;
+}
+.address-location p{
+	font-size: 15px;
+    text-transform: uppercase;
+    margin: 13px 17px 0px;
+}
+.copy-right{
+	margin-top: 100px;
+}
+.copy-right p{
+	text-transform: uppercase;
+	color: #fff;
+}
+.social-media{
+	text-align: center;
+}
+.social-media ul li{
+	list-style: none;
+	color: #fff;
+	margin: 0 10px;
+	display: inline;
+}
+.social-media ul li a .fa{
+	color: #000;
+	background: #fff;
+	text-align: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	line-height: 42px;
+	font-size: 25px;
+	transition: 0.4s ease-in-out;
+}
+/*============
+	End CSS
+=============*/
+
+/*Media Query For Mobile*/
+
+@media ( min-width: 320px ) and ( max-width: 576px ){
+	header p { margin: -24px 0 0 45px; font-size: 12px; }
+	.two { padding: 10px 0; }
+	.navbar-light .navbar-toggler { margin: -40px 90% 0; }
+	.navbar-light .navbar-nav .nav-link { text-align: right; }
+	.img-two { position: absolute; right: 48%; top: 12%; }
+	.banner-content { text-align: center; }
+	.banner-content h5 { margin: 40px 0px 20px; width: 100%; font-size: 11px; }
+	.banner-content h1 { font-size: 50px; }
+	.banner-content h2 { font-size: 50px; margin: 0 0 45px; }
+	.burger-price { width: 25%; height: 30%; line-height: 30%; }
+	.price-border { width: 100%; height: 100%; }
+	.burger-price h3 { font-size: 25px; padding: 15px 0px 0; }
+	.burger-price h3 span { font-size: 15px; }
+	.burger-price p{ font-size: 17px; }
+	.burger-content h1 { font-size: 24px; }
+	.burger-menu { padding: 45px 0px 0; }
+	.burger-menu h3 { font-size: 35px; }
+	.btn-menu { margin: 0; }
+	.burger-menu p { font-size: 14px; padding: 10px 0 0; margin: 0px 0px 50px; }
+	.seperator { margin: 55px 0; }
+	.event-section { text-align: center; }
+	.event-section h5 { font-size: 17px; margin: 0; padding: 10px 0; }
+	.event-section h3 { font-size: 23px; margin: 0; padding: 10px 0; }
+	.event-section p { font-size: 13px; margin: 0; padding: 10px 0 30px; }
+	.owl-theme .owl-nav.disabled+.owl-dots { margin: 15px 0 0; text-align: center; }
+	.booking-section { padding: 30px 0 50px; }
+	.booking-section h5 { font-weight: 25px; }
+	.booking-section h3 { font-size: 30px; padding: 0px 0px 20px; }
+	.form-control { margin: 0; }
+	.btn-submit { margin: 0; }
+	.lorem p { font-size: 14px; }
+	.address-location { padding: 0; }
+	.address-location p { font-size: 12px; margin-top: -31px; margin-left: 50px; }
+	.copy-right p { text-align: center; font-size: 13px; }
+	.social-media ul { padding: 0; }
+	footer { padding: 30px 0 20px; }
+}
